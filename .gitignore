@@ -1,0 +1,5 @@
+**/.ipynb_checkpoints
+**/__pycache__
+**/.venv
+**/.idea
+**/yelp_dataset/raw_data/*.json
