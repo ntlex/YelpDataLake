@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
     yelp_processor = YelpDatasetProcessor()
 
-    businesses_query = "SELECT * FROM businesses WHERE state='AZ' AND is_open=1"
+    businesses_query = "SELECT * FROM businesses WHERE state='IL' AND is_open=1"
     businesses_df = yelp_processor.data_clean_up(
         os.path.join(opt.input_data, 'yelp_academic_dataset_business.json'),
         os.path.join(opt.output_data, 'yelp_academic_dataset_business.json'),
