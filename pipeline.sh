@@ -8,13 +8,13 @@ fi
 
 if [[ $1 == "clean" ]] || [[ $1 == "full" ]]; then
 	echo "Cleaning up raw data";
-	python YelpDatasetProcessor.py \
+	python pipeline_processors/YelpDatasetProcessor.py \
 	      --input-data /app/yelp_dataset/raw_data \
 	      --output-data /app/yelp_dataset/clean_data
 fi
 
 if [[ $1 == "agg" ]] || [[ $1 == "full" ]]; then
 	echo "Running Aggregations on the clean data";
-	python YelpDatasetAggregator.py \
+	python pipeline_processors/YelpDatasetAggregator.py \
 	      --input-data /app/yelp_dataset/clean_data
 fi
