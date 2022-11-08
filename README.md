@@ -24,6 +24,11 @@ Something I noticed here, was that the review dates did not always much the date
 
 # How to run
 
+Unzip the `yel_dataset/clean_data.zip`:
+```commandline
+unzip yelp_dataset/clean_data.zip -d ./yelp_dataset
+```
+
 First build the docker image:
 ```commandline
 docker build -t yelp_pyspark . 
